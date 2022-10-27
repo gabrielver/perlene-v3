@@ -12,9 +12,9 @@ export default function Header({}: Props) {
         <p>Institut Perlene</p>
        </div>
        <div className="menu">
-        <a href="">Le Salon</a>
-        <a href="">Nos Service</a>
-        <a href="">Contact</a>
+        <a href="#hero">Le Salon</a>
+        <a href="#project">Nos Service</a>
+        <a href="#about">Contact</a>
        </div>
       
     </header>
