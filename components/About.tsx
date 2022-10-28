@@ -2,6 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ContactType from './ContactType';
+import Logo from '../asset/imgLogoRandom.png';
+import Main from '../asset/mainFleur.svg';
+import Fleur4 from '../asset/fleur4.svg';
+import Vernis from '../asset/vernis1.png';
 
 type Props = {}
 
@@ -21,15 +25,20 @@ export default function About({}: Props) {
           <p>Notre priorité reste la convivialité et l'authenticité! <br />
               Nous sommes à votre écoute et vous proposons des soins adaptés à vos souhaits. </p>
             <p>Tout les vernis et autres produits utlisés dans notre salon, sont choisis avec soin <br />et respectueux de l’envirronnement.</p>
-        <div className="logos">
-          <img src="" alt="logo1" />
-          <img src="" alt="logo2" />
-          <img src="" alt="logo3" />
-          <img src="" alt="logo4" />
+        <div className="logo">
+         <Image src={Logo} alt="logo"/>
         </div>
+        
   
         </div>
       </div>
+    </div>
+    <div className="main"><Main/></div>
+    <div className="fleur4">
+      <Fleur4/>
+    </div>
+    <div className="vernis">
+      <Image src={Vernis} alt="dessin vernis" />
     </div>
     <div className="about_contact ">
       <div className="green">
@@ -40,6 +49,7 @@ export default function About({}: Props) {
         </div>
       </div>
     </div>
+    
   </div>
 
   )

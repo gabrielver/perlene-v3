@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Services from './Services';
+import Logo from "../asset/logo.svg"
+import Arrow from "../asset/Arrow.svg"
+import Fleur6 from "../asset/fleur6.svg"
 
 type Props = {}
 
@@ -13,6 +16,7 @@ export default function Projects({}: Props) {
     transition={{duration: 1.5}}
    
     className='project'>
+      <div className="logo"><Logo/></div>
        <div className="title">
        <div className="section_title">
        <h1 >Instant Relaxation</h1>
@@ -22,8 +26,9 @@ export default function Projects({}: Props) {
              dédié à la beauté des ongles, à la minceur et au bien-être.</h3>
        </div>       
             <Services />
-            <div className="arrow_drawing">scroll droite</div>
+            <div className="arrow_drawing"><Arrow/></div>
            <div className="circles">
+            <div className="fleur6"><Fleur6/></div>
            <div className="sm_circle">
            <p> N’hésitez <br /> pas à nous <br /> Contactez </p>
                
