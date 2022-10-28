@@ -9,7 +9,7 @@ import Vernis from '../asset/vernis1.png';
 
 type Props = {}
 
-// 
+
 
 export default function About({}: Props) {
   return (
@@ -22,9 +22,11 @@ export default function About({}: Props) {
     <div className="about_info">
       <div className="green">
         <div className="white">
+          <div className="text">
           <p>Notre priorité reste la convivialité et l'authenticité! <br />
               Nous sommes à votre écoute et vous proposons des soins adaptés à vos souhaits. </p>
             <p>Tout les vernis et autres produits utlisés dans notre salon, sont choisis avec soin <br />et respectueux de l’envirronnement.</p>
+          </div>
         <div className="logo">
          <Image src={Logo} alt="logo"/>
         </div>

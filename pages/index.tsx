@@ -10,7 +10,8 @@ const Home: NextPage = () => {
   return (
     <div className='home'>
       <Head>
-        <title>Perlene</title>
+        <title>Per'lène</title>
+        <link rel="icon" href="/logo.svg" />
       </Head>
    {/* Header */}
    <Header/>
