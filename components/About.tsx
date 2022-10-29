@@ -37,8 +37,6 @@ export default function About({}: Props) {
         <div className="logo">
          <Image src={Logo} alt="logo"/>
         </div>
-        
-  
         </div>
       </motion.div>
     </div>

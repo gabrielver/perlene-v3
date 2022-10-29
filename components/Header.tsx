@@ -9,7 +9,7 @@ export default function Header({}: Props) {
   return (
     <header >
        <div className="logo">
-        <p>Institut Perlene</p>
+        <p>Institut Per'lène</p>
        </div>
        <div className="menu">
         <a href="#hero">Le Salon</a>
