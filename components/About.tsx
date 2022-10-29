@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion';
+import { motion, useScroll} from 'framer-motion';
 import Image from 'next/image';
 import ContactType from './ContactType';
 import Logo from '../asset/imgLogoRandom.png';
@@ -11,7 +11,10 @@ type Props = {}
 
 
 
+
 export default function About({}: Props) {
+
+
   return (
   <div className="about">
     <div className="about_title">
@@ -20,7 +23,11 @@ export default function About({}: Props) {
      <br /> Contactez</h2>
     </div>
     <div className="about_info">
-      <div className="green">
+      <motion.div 
+   initial={{opacity: 0, x: -100, y:0}}
+   whileInView={{opacity: 1, x: 0, y:0}}
+   transition={{ ease: "easeIn"}}
+      className="green">
         <div className="white">
           <div className="text">
           <p>Notre priorité reste la convivialité et l'authenticité! <br />
@@ -33,7 +40,7 @@ export default function About({}: Props) {
         
   
         </div>
-      </div>
+      </motion.div>
     </div>
     <div className="main"><Main/></div>
     <div className="fleur4">
@@ -43,13 +50,17 @@ export default function About({}: Props) {
       <Image src={Vernis} alt="dessin vernis" />
     </div>
     <div className="about_contact ">
-      <div className="green">
+      <motion.div 
+       initial={{opacity: 0, x: 100, y:0}}
+       whileInView={{opacity: 1, x: 0, y:0}}
+       transition={{ ease: 'easeIn', delay:0.2}}
+      className="green">
         <div className="white">
         <div className="contact">
          <ContactType />
         </div>
         </div>
-      </div>
+      </motion.div>
     </div>
     
   </div>

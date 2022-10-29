@@ -13,7 +13,7 @@ export default function Projects({}: Props) {
     <motion.div 
     initial={{opacity:0}}
     whileInView={{opacity:1}}
-    transition={{duration: 1.5}}
+    transition={{duration: 1}}
    
     className='project'>
       <div className="logo"><Logo/></div>
@@ -26,7 +26,12 @@ export default function Projects({}: Props) {
              dédié à la beauté des ongles, à la minceur et au bien-être.</h3>
        </div>       
             <Services />
-            <div className="arrow_drawing"><Arrow/></div>
+            <motion.div 
+            // animate={{x: [0,50,0]}}
+            transition={{duration: 2, repeat: Infinity, ease: 'easeInOut'}}
+            whileInView={{x: [0, 50, 0]}}
+            // viewport={{once: false}}
+            className="arrow_drawing"><Arrow/></motion.div>
            <div className="circles">
             <div className="fleur6"><Fleur6/></div>
            <div className="sm_circle">
