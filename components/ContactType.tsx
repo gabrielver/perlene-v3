@@ -36,7 +36,7 @@ function ContactType({}: Props) {
    
     <div className="line"></div>
     <p>Email</p>
-    <span>contact@perlene.fr</span>
+    <span>perlene56@gmail.com</span>
   </div>
    </div>
   )

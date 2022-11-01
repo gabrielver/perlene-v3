@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, transform } from 'framer-motion'
 import Services from './Services';
 import Logo from "../asset/logo.svg"
 import Arrow from "../asset/Arrow.svg"
@@ -9,6 +9,9 @@ type Props = {}
 
 export default function Projects({}: Props) {
     const projects = [1,2,3,4];
+
+
+    
   return (
     <motion.div 
     initial={{opacity:0}}
@@ -26,12 +29,12 @@ export default function Projects({}: Props) {
              dédié à la beauté des ongles, à la minceur et au bien-être.</h3>
        </div>       
             <Services />
-            <motion.div 
+            {/* <motion.button 
             // animate={{x: [0,50,0]}}
             transition={{duration: 2, repeat: Infinity, ease: 'easeInOut'}}
             whileInView={{x: [0, 50, 0]}}
             // viewport={{once: false}}
-            className="arrow_drawing"><Arrow/></motion.div>
+            className="arrow_drawing"><a href="#presso"><Arrow /></a></motion.button> */}
            <div className="circles">
             <div className="fleur6"><Fleur6/></div>
            <div className="sm_circle">

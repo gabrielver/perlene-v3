@@ -35,7 +35,7 @@ export default function Hero({}: Props) {
             <h2>Horaires d'Ouvertures</h2>
             <p className='hour-text'>Mardi-Vendredi: <span>9h-18h30</span></p>
             <p className='hour-text'>Samedi: <span>9h-17h</span></p>
-            <p className='hour-text'>Dimanche: <span>Fermer</span></p>
+            <p className='hour-text'>Dimanche-Lundi: <span>Fermer</span></p>
         </div>
         <div className="woman"><Woman/></div>
     </div>
