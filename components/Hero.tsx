@@ -4,10 +4,12 @@ import Arrow from "../asset/right-arrow.svg"
 import Woman from "../asset/womanBack.svg"
 import Open from "../asset/open.svg"
 import Fleur2 from "../asset/fleur2.svg"
+import { useRouter } from 'next/router'
 
 type Props = {}
 
 export default function Hero({}: Props) {
+    const router = useRouter();
   return (
     <div className="hero">
         <div className="circle"></div>
@@ -20,7 +22,7 @@ export default function Hero({}: Props) {
         </div>
         <div className="main-title">
         <h1>Un Havre de Paix <br /> au coeur du <br /> Pays D'Auray</h1>
-        <button onClick={() => window.location = 'mailto:perlene56@gmail.com'}>
+        <button onClick={() => router.push('mailto:perlene56@gmail.com')}>
             <p>Prendre <br /> Rendez Vous</p>
             <div className="arrow">
                <Arrow />

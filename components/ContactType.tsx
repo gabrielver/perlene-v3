@@ -3,11 +3,14 @@ import Phone from '../asset/phone-call.svg'
 import Mail from '../asset/mail.svg'
 import Localisation from '../asset/localisation.svg'
 import Link from 'next/link'
+import { Router, useRouter } from 'next/router'
 
 type Props = {}
 
 function ContactType({}: Props) {
-  return (
+
+  const router = useRouter();
+  return (   
    <div className="contact_type">
      <div className="contact 1">
         <div className="logo">
@@ -39,7 +42,7 @@ function ContactType({}: Props) {
    
     <div className="line"></div>
     <p>Email</p>
-    <span className='link' onClick={() => window.location = 'mailto:perlene56@gmail.com'}>perlene56@gmail.com</span>
+    <span className='link' onClick={() => router.push('mailto:perlene56@gmail.com')}>perlene56@gmail.com</span>
   </div>
    </div>
   )
