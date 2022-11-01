@@ -306,6 +306,7 @@ header{
         padding-bottom: 5rem;
         @media (max-width: 412px) {
               padding-bottom: 1.5rem;
+              padding-top: 4em;
          };
          @media (max-height: 800px) {
           padding-bottom: 0;
@@ -321,13 +322,14 @@ header{
             font-size: 70px;
             margin: 0;
             padding: 0;
+            @media (max-height: 800px) {
+              font-size: 50px;
+              line-height: 50px;
+            };
             @media (max-width: 412px) {
               font-size: 30px;
          };
-         @media (max-height: 800px) {
-          font-size: 50px;
-          line-height: 50px;
-        };
+         
           }
           h2{
             font-weight: 700;
@@ -734,16 +736,17 @@ header{
               font-size: 20px;
               padding-top: 1.5rem;
               padding-left: 1.5rem;
+              @media (max-height: 800px) {
+                margin: 0;
+                font-size: 16px;
+              };
               @media (max-width: 412px) {
                 font-size: 12px;
                 padding-left: 0.5rem;
                 padding-top: 0.5rem;
                 max-width: 67vw;            
            };
-           @media (max-height: 800px) {
-            margin: 0;
-            font-size: 16px;
-          };
+           
             }
   
             .logo{
@@ -803,16 +806,18 @@ header{
               display: flex;
               justify-content: space-around;
               align-items: center;
+              @media (max-height: 800px) {
+                scale: 0.8;
+                margin: 0;
+               };
               @media (max-width: 412px) {
                 align-items: baseline;
                 margin-top: 3rem;
                 justify-content: flex-end;
                 padding-right: 1rem;
+                margin-top: 1rem;
            };
-           @media (max-height: 800px) {
-           scale: 0.8;
-           margin: 0;
-          };
+           
   
               .contact{
                 display: flex;
@@ -899,14 +904,15 @@ header{
         left: 38%;
         max-width: 450px;
         max-height: 450px;
-        @media (max-width: 412px) {
-        scale: 0.4;
-        top: 5%;
-        left: -35%;};
         @media (max-height: 800px) {
           scale: 0.8;
           top: 28%;
         };
+        @media (max-width: 412px) {
+        scale: 0.4;
+        top: 5%;
+        left: -35%;};
+        
               img{
                 height: 100%;
                 width: 100%; 
