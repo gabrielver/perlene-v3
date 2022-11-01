@@ -282,18 +282,20 @@ header{
     };
       .logo{
         position: absolute;
-        top: 4%;
+        top: 3%;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         opacity: 0.8;
+       
         @media (max-width: 412px) {
          scale: 0.60;
+         top: 0;
      };
      @media (max-height: 800px) {
-      top: 2%;
+      top: 0;
     };
        
       }
@@ -303,7 +305,7 @@ header{
         align-items: center;
         padding-bottom: 5rem;
         @media (max-width: 412px) {
-              padding-bottom: 2rem;
+              padding-bottom: 1.5rem;
          };
          @media (max-height: 800px) {
           padding-bottom: 0;
@@ -347,8 +349,10 @@ header{
           font-weight: 500;
           font-size: 20px;
           text-align: center;
+          margin-bottom: 0;
           @media (max-width: 412px) {
             font-size: 13px;
+            margin-top: 0;
        };
           
         }
@@ -371,9 +375,10 @@ header{
             @media (max-height: 800px) {
               scale: 0.9
             };
-  
+            
           .card{
             width: 100vw;
+            height: auto;
             display: flex;
             flex-direction: column;
             scroll-snap-align: center;
@@ -396,6 +401,9 @@ header{
                  bottom: 20%;
               };
               }
+              .arrow_drawing_back:hover{
+                scale: 1.1;
+              }
               .arrow_drawing{
                 // position: absolute;
                 // bottom: 3%;
@@ -404,6 +412,9 @@ header{
                  scale: 0.5;
                  bottom: 20%;
               };
+              }
+              .arrow_drawing:hover{
+                scale: 1.1;
               }
             }
           }
@@ -494,6 +505,25 @@ header{
                 padding: 1rem;
                 margin: 0;
            };
+            }
+            button{
+              border: none;
+              border-radius: 10px;
+              background: white;
+              font-family: 'Raleway';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              margin-bottom: 1rem;
+              padding: 0.5rem;
+              cursor:pointer;
+              color: $dark-green;
+              transition: all 0.5s ease-in-out;
+            }
+            button:hover{
+              scale: 1.1;
+              background: #9AA188;
+              color: white;
             }
           }
           
@@ -589,6 +619,36 @@ header{
               font-size: 10px;
               margin-left: 0.75rem;
           };
+          }
+        }
+      }
+      .bg-modal{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.704);
+        position: absolute;
+        top: 0;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .modal-content{
+          position: relative;
+          background-color: white;
+          height: 70vh;
+          width: 70vw;
+          text-align: center;
+          padding: 1rem;
+          border-radius: 15px;
+          
+          .close{
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            font-size: 42px;
+            transform: rotate(45deg);
+            cursor: pointer;
           }
         }
       }
@@ -816,6 +876,12 @@ header{
                   @media (max-width: 412px) {
                     font-size: 11px;
                };
+                }
+                .link{
+                  cursor: pointer;
+                  color: #000000;
+                 
+                  text-decoration: none;
                 }
               }
             }

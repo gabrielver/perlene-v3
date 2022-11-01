@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Ongles from '../asset/ongles.jpg'
 import Infra from '../asset/infra.jpg'
@@ -6,11 +6,16 @@ import Cryo from '../asset/cryo.jpg'
 import Presso from '../asset/presso.jpg'
 import { motion, transform } from 'framer-motion'
 import Arrow from "../asset/Arrow.svg"
-type Props = {}
+import Modal from './ModalCryo'
 
-function Services({}: Props) {
+
+type Props = {openModal: any, openCryo: any, openInfra: any}
+
+function Services({openModal, openCryo, openInfra}: Props) {
+
   return (
     <div className='services'>
+      
         <div className='card' id='ongle'> 
                         <Image 
                         src={Ongles} alt="ongle" />               
@@ -44,6 +49,7 @@ function Services({}: Props) {
                                 <span>10€</span>
                             </div>
                             </div>
+                         
                         </div>
             <div className="button">
                         <motion.div   
@@ -60,6 +66,7 @@ function Services({}: Props) {
                         <h4>Pressothérapie </h4>
                         </div>
                             <p>La présotherapie est particulierement indiquée et éfficace contre la cellulite. <br /> Détoxifie le corps en profondeur et apporte un sentiment de bien etre tout en boostant la circulation sanguine et le système lymphatique. </p>
+                            <button onClick={() => openModal(true)}>Voir plus</button>
                         </div>
                         <div className="button">
                         <motion.div 
@@ -76,6 +83,7 @@ function Services({}: Props) {
                         <h4>Cryolipolyse </h4>
                         </div>
                             <p>Méthode d'amincissement par le froid qui consiste à l'élimination progréssive et naturelle des amas graisseux localisés. <br />Ainsi les cellules adipeuses s'autodétruisent, ce qui entraine un amincissement ainsi qu'une réduction de la cellulite</p>
+                            <button onClick={() => openCryo(true)}>Voir plus</button>
                         </div>
                         <div className="button">
                         <motion.div 
@@ -92,6 +100,7 @@ function Services({}: Props) {
                         <h4>Infrathérapie </h4>
                         </div>
                             <p>Un dome diffusant des ondes infrarouges long. <br />Bénéfique pour l'organisme, d'une température comprise entre 41 et 81 degrès. <br /> La sudation obtenue permet d'évacuer les toxines et de bruler un nombre important de calories sans effort.</p>
+                            <button onClick={() => openInfra(true)}>Voir plus</button>
                         </div>
                         <div className="button">
                         <motion.div 
@@ -100,6 +109,7 @@ function Services({}: Props) {
             className="arrow_drawing_back"><a href="#cryo"><Arrow /></a></motion.div>
                         </div>
                     </div>
+                         
     </div>
   )
 }

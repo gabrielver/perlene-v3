@@ -2,6 +2,7 @@ import React from 'react'
 import Phone from '../asset/phone-call.svg'
 import Mail from '../asset/mail.svg'
 import Localisation from '../asset/localisation.svg'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -16,7 +17,9 @@ function ContactType({}: Props) {
     
     <div className="line"></div>
     <p>Téléphone</p>
-    <span>02 97 14 23 74</span>
+    <span>
+      <a className='link' href="tel://+0297142374">02 97 14 23 74</a>
+      </span>
   </div>
      <div className="contact 2">
     <div className="logo">
@@ -36,7 +39,7 @@ function ContactType({}: Props) {
    
     <div className="line"></div>
     <p>Email</p>
-    <span>perlene56@gmail.com</span>
+    <span className='link' onClick={() => window.location = 'mailto:perlene56@gmail.com'}>perlene56@gmail.com</span>
   </div>
    </div>
   )

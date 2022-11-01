@@ -20,7 +20,7 @@ export default function Hero({}: Props) {
         </div>
         <div className="main-title">
         <h1>Un Havre de Paix <br /> au coeur du <br /> Pays D'Auray</h1>
-        <button>
+        <button onClick={() => window.location = 'mailto:perlene56@gmail.com'}>
             <p>Prendre <br /> Rendez Vous</p>
             <div className="arrow">
                <Arrow />
