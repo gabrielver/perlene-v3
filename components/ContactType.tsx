@@ -17,7 +17,7 @@ function ContactType({}: Props) {
         <div className="logo">
         {/* <Phone /> */}
         {/* <object data={Phone} type="image"></object> */}
-        <img src="/phone-call.svg" alt="téléphone" />
+        <img id='logo' src="/phone-call.svg" alt="téléphone" />
         </div>
     
     
@@ -29,7 +29,7 @@ function ContactType({}: Props) {
   </div>
      <div className="contact 2">
     <div className="logo">
-    <img src="/localisation.svg" alt="localisation" />
+    <img id='logo' src="/localisation.svg" alt="localisation" />
     </div>
     
    
@@ -39,7 +39,7 @@ function ContactType({}: Props) {
   </div>
      <div className="contact 3">
         <div className="logo">
-        <img src="/mail.svg" alt="mail" />
+        <img id='logo' src="/mail.svg" alt="mail" />
         </div>
       
    
