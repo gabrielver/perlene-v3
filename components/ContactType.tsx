@@ -4,6 +4,7 @@ import Mail from '../asset/mail.svg'
 import Localisation from '../asset/localisation.svg'
 import Link from 'next/link'
 import { Router, useRouter } from 'next/router'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -14,7 +15,9 @@ function ContactType({}: Props) {
    <div className="contact_type">
      <div className="contact 1">
         <div className="logo">
-        <Phone />
+        {/* <Phone /> */}
+        {/* <object data={Phone} type="image"></object> */}
+        <img src="/phone-call.svg" alt="téléphone" />
         </div>
     
     
@@ -26,7 +29,7 @@ function ContactType({}: Props) {
   </div>
      <div className="contact 2">
     <div className="logo">
-    <Localisation />
+    <img src="/localisation.svg" alt="localisation" />
     </div>
     
    
@@ -36,7 +39,7 @@ function ContactType({}: Props) {
   </div>
      <div className="contact 3">
         <div className="logo">
-        <Mail />
+        <img src="/mail.svg" alt="mail" />
         </div>
       
    
